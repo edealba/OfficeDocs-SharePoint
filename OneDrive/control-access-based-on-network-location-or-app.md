@@ -33,9 +33,20 @@ You can choose a specific IP addresses or IP address ranges from which you want 
     
 2. Click **Edit**.
     
-3. Enter the IP address ranges that you want to allow using CIDR notation. For example: 172.16.0.0, 192.168.1.0/27, 2001:4898:80e8::0/48. Enter one IP address range per line, and make sure there are no overlapping IP addresses.
+3. Enter the **public IP address ranges** that you want to allow using CIDR notation. Enter one IP address range per line, and make sure there are no overlapping IP addresses.
     
 4. Click **Save** on the Device access page. 
+
+**Note:**
+The following IP addresses ranges are considered as private and the system will not block them:
+
+- **10.0.0.0/8 IP addresses**: 10.0.0.0 -- 10.255.255.255
+
+- **172.16.0.0/12 IP addresses:** 172.16.0.0 -- 172.31.255.255
+
+- **192.168.0.0/16 IP addresses:** 192.168.0.0 – 192.168.255.255
+
+
     
 ## Control access from apps that don't use modern authentication
 
